@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class NavMenuComponent {
   isExpanded = false;
 
+  public imgsrc: string="../../assets/Logo.png"
+
   collapse() {
     this.isExpanded = false;
   }
