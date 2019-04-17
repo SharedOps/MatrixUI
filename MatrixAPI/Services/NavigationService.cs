@@ -24,10 +24,10 @@ namespace MatrixAPI.Services
 
         public Task<int> AddNavItem(Navigation navItem)
         {
+            var parameters = new DynamicParameters();
             try
             {
                 Connection.StoredProcedure = Constants.InsertNavigationSp;
-                DynamicParameters parameters = new DynamicParameters();
                 parameters.Add(Constants.ParamNavTitle, navItem.Title);
                 parameters.Add(Constants.ParamNavLink, navItem.Link);
                 parameters.Add(Constants.ParamNavChildLink, 1);
@@ -44,7 +44,7 @@ namespace MatrixAPI.Services
         public Task<IList<Navigation>> GetNavigationItems()
         {
             Connection.StoredProcedure = Constants.GetNavigationItemsSp;
-            DynamicParameters parameters = new DynamicParameters();
+            var parameters = new DynamicParameters();
             return _idapper.QueryList<Navigation>(parameters, Connection);
         }
 
