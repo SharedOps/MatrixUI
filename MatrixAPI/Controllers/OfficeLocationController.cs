@@ -19,14 +19,12 @@ namespace MatrixAPI.Controllers
 
 
         [HttpPost]
-        [Route("AddNavigationItem")]
         public async Task<Response> AddNavigationItem([FromBody] Location location)
         {
             return ResponseUtility.CreateResponse(await _location.AddNavItem(location));
         }
 
         [HttpGet]
-        [Route("GetOfficeLocations")]
         public async Task<Response> GetNavigationItems()
         {
             return ResponseUtility.CreateResponse(await _location.GetNavigationItems());

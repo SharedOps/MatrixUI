@@ -1,11 +1,7 @@
 {
-  "name": "paper-kit-2-angular",
+  "name": "matrix",
   "version": "1.2.0",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/creativetimofficial/pk2-angular.git"
-  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -25,7 +21,7 @@
     "@angular/platform-browser": "7.2.0",
     "@angular/platform-browser-dynamic": "7.2.0",
     "@angular/router": "7.2.0",
-    "@ng-bootstrap/ng-bootstrap": "2.0.0",
+    "@ng-bootstrap/ng-bootstrap": "^4.1.1",
     "bootstrap": "4.1.2",
     "core-js": "2.4.1",
     "jquery": "3.2.1",

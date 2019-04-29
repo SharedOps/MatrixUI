@@ -14,7 +14,14 @@ namespace MatrixAPI.Services
     public class LocationService : ILocation
     {
         private readonly IDapper _idapper;
+
         private DBConnection Connection { get; set; } = new DBConnection();
+
+
+        public LocationService(IDapper dapper)
+        {
+            _idapper = dapper;
+        }
 
         public Task<int> AddNavItem(Location location)
         {
@@ -30,7 +37,7 @@ namespace MatrixAPI.Services
             catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
         }
 

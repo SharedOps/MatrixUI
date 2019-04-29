@@ -19,14 +19,12 @@ namespace MatrixAPI.Controllers
         }
 
         [HttpPost]
-        [Route("AddNavigationItem")]
         public async Task<Response> AddNavigationItem([FromBody] Navigation navitem)
         {
             return ResponseUtility.CreateResponse(await _navigation.AddNavItem(navitem));
         }
 
         [HttpGet]
-        [Route("GetNavigationItems")]
         public async Task<Response> GetNavigationItems()
         {
             return ResponseUtility.CreateResponse(await _navigation.GetNavigationItems());

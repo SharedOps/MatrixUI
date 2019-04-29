@@ -37,6 +37,8 @@ namespace MatrixAPI
             //services.
 
             services.AddSingleton<INavigation,NavigationService>();
+            services.AddSingleton<ILocation, LocationService>();
+            services.AddSingleton<IEmailService, EmailService>();
             services.AddSingleton<IDapper, Repository.Dapper>();
 
 
@@ -60,12 +62,13 @@ namespace MatrixAPI
 
             app.UseSwagger();
 
-            app.UseSwaggerUI(c => {
+            app.UseSwaggerUI(c =>
+            {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Matrix API");
                 c.RoutePrefix = string.Empty;
             });
 
-         
+
 
 
             app.UseHttpsRedirection();
@@ -73,7 +76,7 @@ namespace MatrixAPI
 
             app.Run(context =>
             {
-                context.Response.Redirect("/swagger/index.html");
+                context.Response.Redirect("/index.html");
                 return Task.CompletedTask;
             });
         }

@@ -37,7 +37,7 @@ namespace MatrixAPI.Services
             catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
         }
 
