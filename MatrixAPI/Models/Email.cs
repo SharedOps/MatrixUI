@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Threading.Tasks;
 
 namespace MatrixAPI.Models
 {
     public class Email
     {
-        public string FromAddress { get; set; }
+
+        [IgnoreDataMember]
+        public string FromAddress { get; set; } = "info@saaramsha.com";
 
         public string ToAddress { get; set; }
 

@@ -5,6 +5,6 @@ namespace MatrixAPI.Services.Contracts
 {
     public interface IEmailService
     {
-        Task<int> SendEmail(Email mail);
+        Task<string> SendEmail(Email mail);
     }
 }
