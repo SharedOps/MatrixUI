@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrix.Actors", "Matrix.Act
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrix.Hosting.Service", "Matrix.Hosting.Service\Matrix.Hosting.Service.csproj", "{E872F124-29E6-4FC6-B76B-E9577448789C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixWebApi", "MatrixWebApi\MatrixWebApi.csproj", "{BD22972E-DFAE-460C-BBD3-ACEA9F7052DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixRepository", "MatrixRepository\MatrixRepository.csproj", "{9337F0A2-9F8B-4CFC-9A37-83AE8D23BBD9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{E872F124-29E6-4FC6-B76B-E9577448789C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E872F124-29E6-4FC6-B76B-E9577448789C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E872F124-29E6-4FC6-B76B-E9577448789C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD22972E-DFAE-460C-BBD3-ACEA9F7052DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD22972E-DFAE-460C-BBD3-ACEA9F7052DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD22972E-DFAE-460C-BBD3-ACEA9F7052DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD22972E-DFAE-460C-BBD3-ACEA9F7052DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9337F0A2-9F8B-4CFC-9A37-83AE8D23BBD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9337F0A2-9F8B-4CFC-9A37-83AE8D23BBD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9337F0A2-9F8B-4CFC-9A37-83AE8D23BBD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9337F0A2-9F8B-4CFC-9A37-83AE8D23BBD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
